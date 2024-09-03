@@ -1,0 +1,36 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+
+{% block head %}
+    <!-- additional CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'author_code/css/maintenance_work_number.css' %}">
+{% endblock %}
+
+{% block title %}作品番号メンテナンス{% endblock %}
+
+{% block contents %}
+    <h3 class="headline">作品番号メンテナンス</h3>
+    <div class="comments">
+        <p>
+            作品一覧画面での並び順を調整するためのソート番号を再設定します<br>
+            一括登録後等に並び順がおかしい場合に実行してください
+        </p>
+    </div>
+    <div class="recalculation d-flex align-items-center justify-content-center">
+        <button id="action" class="col-6 btn btn-danger">再計算を行う</button>
+    </div>
+    <div class="progress d-flex align-items-center justify-content-center">
+        <div id="result" class="progress col-8"></div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <!-- jquery-loading-overlay -->
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+    <!-- original jquery -->
+    <script>
+        var recalculation_url = '{% url "author_code:ajax_maintenance_work_number" %}';
+        var task_url = '{{ HTTP_HOST }}/'
+    </script>
+    <script type="text/javascript" src="{% static 'author_code/js/maintenance_work_number.js' %}"></script>
+{% endblock %}

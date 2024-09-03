@@ -1,0 +1,46 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+
+{% block title %}TOP{% endblock %}
+
+{% block contents %}
+
+<h3 class="headline">著者記号検索システム</h3>
+
+<div class="form-group">
+    <form>
+        <input class="form-control" type="text" id="search-text" placeholder="著者名をアルファベットで入力してください">
+    </form>
+</div>
+
+<div id="result">
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).on('keyup', '#search-text', function(e) {
+        console.log($('#search-text').val())
+        $.ajax({
+            'url': '{% url "author_code:ajax_authorsymbol_search" %}',
+            'type': 'GET',
+            'data': {
+                'keyword': $('#search-text').val(),
+            },
+            'dataType': 'json'
+        }).done( response => {
+            $('#result').empty();
+
+            for (const symbol of response.symbol_list) {
+                console.log(symbol)
+                const base = '{{ HTTP_HOST }}';
+                const a = '<a href="' + base + symbol.url + '"target="_self">';
+                const p = '<p>' + a + symbol.title + '</a></p>'
+
+                $('#result').append(p);
+            }
+        });
+    });
+</script>
+{% endblock %}

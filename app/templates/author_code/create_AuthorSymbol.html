@@ -1,0 +1,60 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+
+{% block title %}著者記号の登録{% endblock %}
+
+{% block contents %}
+<h3 class="headline">{{ author.AuthorSymbol_id }} | {{author.Heading }}</h3>
+
+<form method="POST">
+    {% csrf_token %}
+    <table class="table">
+        <tr>
+            {% for field in form %}
+            {% if field.help_text == '著者名' %}
+            <td>{{ field.as_hidden }}</td>
+            {% else %}
+                {% if field.help_text != '著者記号' %}
+                <td class="align-middle text-center" style="width:30%">{{ field }}</td>
+                <td class="align-middle text-center" style="width:5%">/</td>
+                {% else %}
+                <td class="align-middle text-center" style="width:30%">{{ field }}</td>
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+        </tr>
+    </table>
+
+    <div class="text-center">
+        <input type="submit" value="登録"  class="btn btn-primary col-6">
+    </div>
+</form>
+<div class="text-right">
+    <a href="{% url 'author_code:AuthorDetail' author.pk %}" target="_self"><button type="button" class="btn btn-secondary">戻る</button></a>
+</div>
+<div id="result" class="text-center"></div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+    $(document).on('change keyup', '.ajax-search-usedsymbol', function(e) {
+        $.ajax({
+            'url': '{% url "author_code:ajax_usedsymbol_search" %}',
+            'type': 'GET',
+            'data': {
+                'LanguageCode': $('#id_LanguageCode').val(),
+                'SubjectCode': $('#id_SubjectCode').val(),
+                'AuthorSymbol': $('#id_AuthorSymbol').val(),
+            },
+            'dataType': 'json'
+            }).done( response => {
+                $('#result').empty();
+
+                for (const symbol of response.symbol_list) {
+                    const p = $('<p>', {text: symbol});
+                    $('#result').append(p);
+                }
+            });
+        });
+    </script>
+{% endblock %}

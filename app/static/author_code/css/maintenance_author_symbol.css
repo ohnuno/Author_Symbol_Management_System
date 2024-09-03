@@ -1,0 +1,10 @@
+form.maintenance-form:nth-child(odd) {
+    background-color: #aaaaaa;
+}
+
+form.maintenance-form {
+    margin: unset;
+}
+.form-check {
+    margin-top: .5rem;
+}

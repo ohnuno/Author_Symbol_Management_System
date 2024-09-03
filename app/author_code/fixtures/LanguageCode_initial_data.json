@@ -1,0 +1,1003 @@
+[
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "A",
+        "fields": {
+            "Language": "日本語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "B",
+        "fields": {
+            "Language": "中国語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "C",
+        "fields": {
+            "Language": "朝鮮語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "D",
+        "fields": {
+            "Language": "[極北諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "D1",
+        "fields": {
+            "Language": "アイヌ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "D2",
+        "fields": {
+            "Language": "ギリヤーク、ニーヴフ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "D3",
+        "fields": {
+            "Language": "その他（チュクチ、カムチャツカなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E",
+        "fields": {
+            "Language": "[チベット・東南アジア諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E1",
+        "fields": {
+            "Language": "タイ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E11",
+        "fields": {
+            "Language": "ラオス、シャン、アーホム"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E2",
+        "fields": {
+            "Language": "ビルマ、ロロ、西夏文字(Sihia)、マニプリ、メイテイ、ガロ、コクボロック(ティプラ)、ボド(ボロ)、ラバ、ミゾ(ルシャイ)"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E3",
+        "fields": {
+            "Language": "ヒマラヤ諸語（チベット、ゾンガ（ブータン）、ネワーリー、タッカリー、アトパレ（アトパハリヤー）、ヤッカ（ヤッキャ）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E4",
+        "fields": {
+            "Language": "ヴェトナム（安南）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E5",
+        "fields": {
+            "Language": "[モン・クメール諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E51",
+        "fields": {
+            "Language": "カンボジア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E52",
+        "fields": {
+            "Language": "モン"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E53",
+        "fields": {
+            "Language": "その他のモン・クメール諸語（カシ、クムなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "E6",
+        "fields": {
+            "Language": "その他（チャム、ミャオ、ヤオ、サンタル、ムンダ語族、ホー、コルワー、アスリー、ビールホール、ブミジュなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "F",
+        "fields": {
+            "Language": "[南島諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "F1",
+        "fields": {
+            "Language": "インドネシア、マレー"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "F12",
+        "fields": {
+            "Language": "ジャヴァ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "F13",
+        "fields": {
+            "Language": "フィリピン（タガログ、イロカノなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "F14",
+        "fields": {
+            "Language": "高砂（台湾土語）、アタヤル"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "F15",
+        "fields": {
+            "Language": "その他（マルガシ）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "F2",
+        "fields": {
+            "Language": "ポリネシア諸語（ハワイなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "F3",
+        "fields": {
+            "Language": "メラネシア諸語（サモア、トンガ、フィジーなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G",
+        "fields": {
+            "Language": "[アルタイ諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G1",
+        "fields": {
+            "Language": "[蒙古系]蒙古語一般"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G11",
+        "fields": {
+            "Language": "ハルハ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G12",
+        "fields": {
+            "Language": "ブリヤート"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G13",
+        "fields": {
+            "Language": "その他（カルマック、内蒙古、オイラト、ダグル(ダフール)、バオアン(保安)、ドゥンシャン(東郷)など）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G14",
+        "fields": {
+            "Language": "古典蒙古（蒙古文語）、オルドス"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G2",
+        "fields": {
+            "Language": "[チュルク系]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G21",
+        "fields": {
+            "Language": "トルコ（オスマントルコも含む）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G22",
+        "fields": {
+            "Language": "その他（アゼルバイジャン、ウズベク、キルギス、カザフ、ヤクート、チャガタイ、チュヴァシュ、ウイグル、トルクメン、タタールなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G3",
+        "fields": {
+            "Language": "[ツングース系]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G31",
+        "fields": {
+            "Language": "ツングース諸語（エヴェンキ、オロッコ、オロチョンなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G32",
+        "fields": {
+            "Language": "満州(Manchu)"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G33",
+        "fields": {
+            "Language": "女真(Juchen)"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "G4",
+        "fields": {
+            "Language": "契丹文字"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "H",
+        "fields": {
+            "Language": "[セム諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "H1",
+        "fields": {
+            "Language": "アラビア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "H2",
+        "fields": {
+            "Language": "エチオピア（即ち、アムハラ）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "H3",
+        "fields": {
+            "Language": "シリア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "H4",
+        "fields": {
+            "Language": "アラム"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "H5",
+        "fields": {
+            "Language": "カナーン（フェニキアなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "H6",
+        "fields": {
+            "Language": "ヘブライ（イディッシュも含む）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "H7",
+        "fields": {
+            "Language": "アッカド（アッシリア、バビロニア、カルデア、スメルも含む）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I",
+        "fields": {
+            "Language": "[インド諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I1",
+        "fields": {
+            "Language": "ウルドゥー、ヒンドゥスターニー"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I2",
+        "fields": {
+            "Language": "ヒンディー、アワディー、ブラジ（ブラジバーシャー）、ラージャスターニー、ボージプリー方言、パハーリー方言、マイティーリー、マールヴィー方言、バーンガルー方言"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I3",
+        "fields": {
+            "Language": "上記外印欧系諸語（ベンガル、オリヤー、マラーティー、グジャラーティー、シンハラ、ロマーニー、ネパーリー、スィンディー、カシュミーリー、コンカーニー、アッサム、パンジャービー、ドーグリー）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I6",
+        "fields": {
+            "Language": "サンスクリット"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I7",
+        "fields": {
+            "Language": "プラクリット、パーリ、アパブランシャ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I9",
+        "fields": {
+            "Language": "[ドラヴィダ諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I91",
+        "fields": {
+            "Language": "タミル"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "I92",
+        "fields": {
+            "Language": "タミル語以外のドラヴィダ諸語（テルグ、マラヤーラム、カンナダ、ゴーンディー、マルト）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "J",
+        "fields": {
+            "Language": "[イラン系諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "J1",
+        "fields": {
+            "Language": "ペルシア（ダリーを含む）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "J2",
+        "fields": {
+            "Language": "その他（オセット、パシュトー、クルド、パルーチー(ビイルチ)、タジクなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "J6",
+        "fields": {
+            "Language": "古代ペルシア、アヴェスタ、パフラヴィー"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "K",
+        "fields": {
+            "Language": "英語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "L",
+        "fields": {
+            "Language": "ドイツ語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M",
+        "fields": {
+            "Language": "[その他のゲルマン諸語]（ゲルマン諸語一般）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M1",
+        "fields": {
+            "Language": "[西ゲルマン]オランダ（アフリカーンス、フラマンを含む）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M12",
+        "fields": {
+            "Language": "フリーズ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M2",
+        "fields": {
+            "Language": "[北ゲルマン]スカンジナヴィア一般"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M21",
+        "fields": {
+            "Language": "アイスランド"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M22",
+        "fields": {
+            "Language": "ノルウェー"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M23",
+        "fields": {
+            "Language": "デンマーク"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M24",
+        "fields": {
+            "Language": "スウェーデン"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M25",
+        "fields": {
+            "Language": "古代ノルド"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "M3",
+        "fields": {
+            "Language": "[東ゲルマン]（ゴートなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "N",
+        "fields": {
+            "Language": "フランス語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "N5",
+        "fields": {
+            "Language": "プロヴァンス、オックなど、南仏方言"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "P",
+        "fields": {
+            "Language": "スペイン語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "P5",
+        "fields": {
+            "Language": "カタロニア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "P6",
+        "fields": {
+            "Language": "ガリシア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Q",
+        "fields": {
+            "Language": "ポルトガル語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "R",
+        "fields": {
+            "Language": "イタリア語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "R5",
+        "fields": {
+            "Language": "[その他のロマンス語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "R51",
+        "fields": {
+            "Language": "ルーマニア（モルダヴィア）、ロマン"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "R52",
+        "fields": {
+            "Language": "レト・ロマン（ラディン、ロマンシュ、フリウリ）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "R53",
+        "fields": {
+            "Language": "ダルマチア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "R55",
+        "fields": {
+            "Language": "その他（サルデーニャなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S",
+        "fields": {
+            "Language": "ロシア語　[スラヴ諸語一般]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S5",
+        "fields": {
+            "Language": "[東スラヴ]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S51",
+        "fields": {
+            "Language": "ウクライナ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S52",
+        "fields": {
+            "Language": "白ロシア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S6",
+        "fields": {
+            "Language": "[西スラヴ]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S61",
+        "fields": {
+            "Language": "ポーランド"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S62",
+        "fields": {
+            "Language": "ヴェント（即ち、ソルブ）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S63",
+        "fields": {
+            "Language": "チェコ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S64",
+        "fields": {
+            "Language": "スロヴァキア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S7",
+        "fields": {
+            "Language": "[南スラヴ]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S71",
+        "fields": {
+            "Language": "ブルガリア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S72",
+        "fields": {
+            "Language": "セルビア、クロアチア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S73",
+        "fields": {
+            "Language": "スロヴェニア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S74",
+        "fields": {
+            "Language": "マケドニア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "S8",
+        "fields": {
+            "Language": "古代教会スラヴ語(スラヴ祖語を含む)"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "T",
+        "fields": {
+            "Language": "[バルト諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "T1",
+        "fields": {
+            "Language": "リトアニア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "T2",
+        "fields": {
+            "Language": "ラトヴィア(即ち、レット）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "T3",
+        "fields": {
+            "Language": "古プロシア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "U",
+        "fields": {
+            "Language": "ギリシア語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "U5",
+        "fields": {
+            "Language": "現代ギリシア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "V",
+        "fields": {
+            "Language": "ラテン語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "W",
+        "fields": {
+            "Language": "[ウラル諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "W1 ",
+        "fields": {
+            "Language": "[フィン・ウゴール]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "W11",
+        "fields": {
+            "Language": "フィン（即ち、スオミ）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "W12",
+        "fields": {
+            "Language": "エストニア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "W13",
+        "fields": {
+            "Language": "ラップ"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "W14",
+        "fields": {
+            "Language": "マジャール（即ち、ハンガリー）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "W15",
+        "fields": {
+            "Language": "その他のフィン・ウゴール諸語（ウドムルド）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "W2",
+        "fields": {
+            "Language": "サモエード"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X",
+        "fields": {
+            "Language": "[その他のヨーロッパ諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X1",
+        "fields": {
+            "Language": "[ケルト諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X11",
+        "fields": {
+            "Language": "ゲール（アイルランド、マン、スコットランド・ゲール）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X12",
+        "fields": {
+            "Language": "ブリトン（ウェールズ、キム、コーンウォール、ブルトン）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X13",
+        "fields": {
+            "Language": "その他"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X2",
+        "fields": {
+            "Language": "アルバニア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X3",
+        "fields": {
+            "Language": "アルメニア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X4",
+        "fields": {
+            "Language": "バスク"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X5",
+        "fields": {
+            "Language": "コーカサス諸語（アバス、ラック、グルジア、アヴァール、レズギ）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "X6",
+        "fields": {
+            "Language": "アナトリア、ヒッタイト"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y",
+        "fields": {
+            "Language": "[ハム語][アフリカの諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y1",
+        "fields": {
+            "Language": "[ハム語・アフリカの諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y11",
+        "fields": {
+            "Language": "古代エジプト（コプト）、ヒエログリフ（象形文字）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y12",
+        "fields": {
+            "Language": "ベルベル、リビア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y13",
+        "fields": {
+            "Language": "スダン・ギネア諸語（ヨルバ、マルギ、ハウサ、Grebo, Mandingo, Ewe, Dinka, Shielukなど)"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y14",
+        "fields": {
+            "Language": "バンツー諸語（スワヒリ、ズールー、ヤオ、ルバ、コンゴ、キクユ、Luganda, Ganda)"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y15",
+        "fields": {
+            "Language": "ホッテントット、ブッシュマン"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y16",
+        "fields": {
+            "Language": "クシ諸語（ソマリなど）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y2",
+        "fields": {
+            "Language": "[アメリカの諸語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y21",
+        "fields": {
+            "Language": "エスキモー、アレウト諸語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y22",
+        "fields": {
+            "Language": "アメリカ・インディアン諸語"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y3",
+        "fields": {
+            "Language": "オーストラリア土語（タスマニア）"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y4",
+        "fields": {
+            "Language": "パプア"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y5",
+        "fields": {
+            "Language": "アンダマン、オンゲ、ジャラワ方言"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Y6",
+        "fields": {
+            "Language": "[その他系統不明の諸言語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Z",
+        "fields": {
+            "Language": "[人工語]"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Z1",
+        "fields": {
+            "Language": "エスペラント"
+        }
+    },
+    {
+        "model": "author_code.LanguageCode",
+        "pk": "Z2",
+        "fields": {
+            "Language": "その他"
+        }
+    }
+]

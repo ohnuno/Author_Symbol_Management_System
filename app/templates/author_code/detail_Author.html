@@ -1,0 +1,40 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+
+{% block title %}著者記号一覧{% endblock %}
+
+{% block contents %}
+
+<h3 class="headline">{{ author.AuthorSymbol_id }} | {{ author.Heading }}</h3>
+
+<table class="table table-striped">
+
+    <tr>
+        <th class="align-middle text-center">言語記号</th>
+        <th class="align-middle text-center">分類記号</th>
+        <th class="align-middle text-center">著者記号</th>
+        <th class="align-middle text-center"></th>
+        <th class="align-middle text-center"></th>
+    </tr>
+    {% if symbol_list %}
+    {% for symbol in symbol_list %}
+    <tr>
+        <td class="align-middle text-center text-center">{{ symbol.LanguageCode_id }}</td>
+        <td class="align-middle text-center">{{ symbol.SubjectCode_id }}</td>
+        <td class="align-middle text-center">{{ symbol.AuthorSymbol }}</td>
+        <td class="align-middle text-center"><a href="{% url 'author_code:AuthorSymbolDetail' symbol.pk %}" target="_self"><button type="button" class="btn btn-outline-info">追加</button></a></td>
+        <td class="align-middle text-center"><a href="{% url 'author_code:AuthorSymbolDelete' symbol.pk %}" target="_self"><button type="button" class="btn btn-outline-danger">削除</button></a></td>
+    </tr>
+    {% endfor %}
+    {% endif %}
+    <tr>
+        <td class="align-middle text-center"></td>
+        <td class="align-middle text-center"></td>
+        <td class="align-middle text-center"></td>
+        <td class="align-middle text-center"><a href="{% url 'author_code:AuthorSymbolCreate' %}?author={{ author.pk }}" target="_self"><button type="button" class="btn btn-outline-danger">新規</button></a></td>
+        <td class="align-middle text-center"></td>
+    </tr>
+
+</table>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+body > .container {
+padding: 60px 15px 0;
+}
+
+body > .container > .headline {
+    margin: 20px 0px;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer {
+    height: 3rem;
+}

@@ -1,0 +1,22 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+
+{% block title %}作品の削除{% endblock %}
+
+{% block contents %}
+<h3 class="headline">著者記号の削除</h3>
+<h4>以下の著者記号を削除してよろしいですか？</h4>
+<ul>
+    <li>{{ authorsymbol.LanguageCode.LanguageCode }}/{{ authorsymbol.SubjectCode.SubjectCode }}/{{ authorsymbol.AuthorSymbol }} : {{ authorsymbol.AuthorId.Heading }}
+</ul>
+<form class="" method="post">
+    {% csrf_token %}
+    <div class="col-6 text-center">
+        <input type="submit" class="btn btn-danger" value="Delete">
+    </div>
+</form>
+<div class="text-right">
+    <a href="{% url 'author_code:AuthorDetail' authorsymbol.AuthorId_id %}" target="_self"><button type="button" class="btn btn-secondary">戻る</button></a>
+</div>
+<div id="result" class="text-center"></div>
+{% endblock %}

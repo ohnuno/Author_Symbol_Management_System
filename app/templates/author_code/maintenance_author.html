@@ -1,0 +1,54 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block head %}
+    <!-- additional CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'author_code/css/maintenance_author_symbol.css' %}">
+{% endblock %}
+
+{% block title %}著者記号メンテナンス{% endblock %}
+
+{% block contents %}
+    <h3 class="headline">著者記号メンテナンス</h3>
+    <div class="comments">
+        <p>
+            同一の言語・主題に対して複数の著者記号が作成されているものの一覧です。<br>
+            <strong>採用する著者標題</strong>を選択して「マージ」ボタンを押すと、当該標題に著作をマージします。
+        </p>
+    </div>
+    {% for form in form_list %}
+        <form id="form_id_{{ forloop.counter0 }}" class="maintenance-form" method="post">
+            <div class="form-row">
+                <div class="col-2 d-flex align-items-center justify-content-center">
+                    {{ form.select.label }}
+                </div>
+                <div class="col-8">
+                    {% for choice in form.select %}
+                        <div class="form-check">
+                            {{ choice.tag }}
+                            <a href="{% url 'author_code:AuthorSymbolDetail' choice.data.value %}" target="_blank">
+                                <label class="form-check-label" for="">{{ choice.choice_label }}</label>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-center">
+                    <button class="btn btn-danger" type="submit">マージ</button>
+                </div>
+            </div>
+            {% csrf_token %}
+        </form>
+    {% endfor %}
+{% endblock %}
+
+{% block scripts %}
+    <!-- jquery-loading-overlay -->
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+    <!-- original jquery -->
+    <script>
+        var recalculation_url = '{% url "author_code:ajax_maintenance_author_symbol" %}';
+        var task_url = '{{ HTTP_HOST }}/'
+    </script>
+    <script type="text/javascript" src="{% static 'author_code/js/maintenance_author_symbol.js' %}"></script>
+{% endblock %}

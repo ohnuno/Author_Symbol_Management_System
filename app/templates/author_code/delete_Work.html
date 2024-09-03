@@ -1,0 +1,21 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+
+{% block title %}作品の削除{% endblock %}
+
+{% block contents %}
+<h3 class="headline">作品の削除</h3>
+<h4>以下の作品を削除してよろしいですか？</h4>
+<ul>
+    <li>タイトル：{{ work.BookTitle }} / 図書ID：{{ work.BookId }}
+</ul>
+<form class="" method="post">
+    {% csrf_token %}
+    <div class="col-6 text-center">
+        <input type="submit" class="btn btn-danger" value="Delete">
+    </div>
+</form>
+<div class="text-right">
+    <a href="{% url 'author_code:AuthorSymbolDetail' work.AuthorSymbolId_id %}" target="_self"><button type="button" class="btn btn-secondary">戻る</button></a>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+django-bootstrap4 = "*"
+django-widget-tweaks = "*"
+pandas = "*"
+django-pandas = "*"
+numpy = "*"
+chardet = "*"
+sentry-sdk = "*"
+celery = "*"
+django-celery-results = "*"
+redis = "*"
+django-redis = "*"
+django-celery-beat = "*"
+django-adminlte-3 = "*"
+django-dynamic-formsets = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

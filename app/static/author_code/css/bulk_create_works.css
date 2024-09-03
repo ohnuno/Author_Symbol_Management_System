@@ -1,0 +1,14 @@
+div.result-area {
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+div.result {
+    height: auto;
+}
+h4 {
+    margin-top: 1rem;
+}
+td {
+    font-size: small;
+}

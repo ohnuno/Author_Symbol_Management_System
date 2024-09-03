@@ -1,0 +1,29 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+
+{% block title %}著者の登録{% endblock %}
+
+{% block contents %}
+<h3 class="headline">{{ author.AuthorSymbol_id }} | {{author.Heading }}</h3>
+<h4>著者名を入力してください</h4>
+<form method="POST">
+    {% csrf_token %}
+    <table class="table">
+        <tr>
+            {% for field in form %}
+            {% if field.help_text == 'カッター・サンボーン著者記号' %}
+            {{ field.as_hidden }}
+            {% else %}
+            <td class="align-middle text-center" style="width:10%">{{ field.help_text }}</td>
+            <td class="align-middle text-center" style="width:85%">{{ field }}</td>
+            {% endif %}
+            {% endfor %}
+            <td class="align-middle text-center" style="width:5%"><input type="submit" value="登録"  class="btn btn-primary"></td>
+        </tr>
+    </table>
+</form>
+
+<div class="text-right">
+    <a href="{% url 'author_code:index' %}" target="_self"><button type="button" class="btn btn-secondary">戻る</button></a>
+</div>
+{% endblock %}

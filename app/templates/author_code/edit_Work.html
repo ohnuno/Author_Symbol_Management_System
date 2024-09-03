@@ -1,0 +1,57 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+
+{% block title %}作品の編集{% endblock %}
+
+{% block contents %}
+<h3 class="headline">{{ work.AuthorSymbolId.AuthorId.AuthorSymbol_id }} | {{ work.AuthorSymbolId.AuthorId.Heading }}</h3>
+<h4>{{ work.AuthorSymbolId.LanguageCode_id }}/{{ work.AuthorSymbolId.SubjectCode_id }}/{{ work.AuthorSymbolId.AuthorSymbol}}</h4>
+
+    {% for field in form %}
+    {% if field.errors %}
+<div class="alert alert-danger">
+    {{ field.errors }}
+    {{ field.help_text }}
+</div>
+    {% endif %}
+    {% endfor %}
+
+<form method="POST">
+    {% csrf_token %}
+
+    <table class="table table-striped">
+
+        <tbody>
+            <tr>
+                {% for field in form %}
+                {% if field.help_text == '著者記号' %}
+                <th class="align-middle text-center" style="width:0%">{{ field.help_text.as_hidden }}</th>
+                {% elif field.help_text == 'ソート用WorkNumber' %}
+                <th class="align-middle text-center" style="width:0%">{{ field.help_text.as_hidden }}</th>
+                {% elif field.help_text == 'ソート用SeriesNumber' %}
+                <th class="align-middle text-center" style="width:0%">{{ field.help_text.as_hidden }}</th>
+                {% elif field.help_text == '書名' %}
+                <th class="align-middle text-center" style="width:65%">{{ field.help_text }}</th>
+                {% elif field.help_text == '図書ID' %}
+                <th class="align-middle text-center" style="width:15%">{{ field.help_text }}</th>
+                {% else %}
+                <th class="align-middle text-center" style="width:10%">{{ field.help_text }}</th>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for field in form %}
+                <td class="align-middle text-center">{{ field }} </td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-center">
+        <input type="submit" value="登録" class="col-6 btn btn-primary">
+    </div>
+
+</form>
+<div class="text-right">
+    <a href="{% url 'author_code:AuthorSymbolDetail' work.AuthorSymbolId_id %}" target="_self"><button type="button" class="btn btn-secondary">戻る</button></a>
+</div>
+{% endblock %}

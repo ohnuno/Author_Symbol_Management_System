@@ -1,0 +1,30 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+{% block title %}アップロード結果{% endblock %}
+
+{% block head %}
+<link rel='stylesheet' href='https://cdn.rawgit.com/JeremyFagis/dropify/master/dist/css/dropify.css' />
+{% endblock %}
+
+{% block contents %}
+
+<h3 class="headline">アップロード結果</h3>
+
+{% if not error %}
+    <div class="alerts alert-success" role="alert">
+        <p>{{ count }}件を登録しました</p>
+    </div>
+    <br>
+{% else %}
+    <div class="alerts alert-danger" role="alert">
+        <p>
+            下記のエラーが発生し登録ができませんでした。<br>
+            詳細は管理者に問い合わせてください。
+        </p>
+        {{ error|linebreaksbr }}
+    </div>
+    <br>
+{% endif %}
+
+{% endblock %}
+

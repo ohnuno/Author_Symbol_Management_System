@@ -1,0 +1,27 @@
+{% extends 'author_code/base.html' %}
+{% load static %}
+{% block title %}Cutter Sunborn Three Figure Author Table を一括アップロードする{% endblock %}
+
+{% block head %}
+<link rel='stylesheet' href='http://cdn.rawgit.com/JeremyFagis/dropify/master/dist/css/dropify.css' />
+{% endblock %}
+
+{% block contents %}
+
+<h3 class="headline">CSV ファイルをアップロード</h3>
+<form action="{% url 'author_code:Upload' %}" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" class="dropify" data-default-file="ファイルを選択してください" name="csv">
+  <button type="submit" class="btn" name="button">アップロード</button>
+</form>
+
+{% endblock %}
+
+{% block scripts %}
+<script src='http://cdn.rawgit.com/JeremyFagis/dropify/master/dist/js/dropify.js'></script>
+<script>
+$(function(){
+  $('.dropify').dropify();
+})
+</script>
+{% endblock %}
